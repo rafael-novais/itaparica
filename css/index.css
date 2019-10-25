@@ -1,0 +1,445 @@
+/*//////////////////////////////ESTILOS GERAIS PARA MOBILE E DESKTOP///////////////////////////////*/
+body {
+  width: 100%;
+  height: 100vh;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+}
+.inicio { /*imagem background da tela inicial*/
+  background-image: url("../img/image3.png");
+  background-size: cover;
+	background-position: top center;
+	height: 100%;
+}
+.arredondar-botao { /*esse estilo arredonda o botao e o deixa pronto para outras estilizações*/
+  border-radius: 50px;
+  border-style: none;
+  border: 1px solid white;
+}
+.botao-quartos { /*estilos dos botoes da section 'quartos'*/
+  background-color: transparent;
+  border-style: none;
+  border: 1px solid white;
+  width: 50%;
+  padding: .7rem;
+}
+.div-duplo, .div-triplo {
+  padding: 0; /*estilo responsavel por tirar bordas indesejadas das imagens dos carrosseis*/
+}
+.botao-ver-quartos-wrapper { /*esse wrapper auxilia posicionar o botao 'ver todos os aurtos' no centro da tela*/
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.botao-ver-quartos-wrapper button { /*esse botao é unico no site, exige um estilo proprio*/
+  background-color: transparent;
+  border-color: #9A9A9A;
+  color: #9A9A9A;
+  margin: 2rem;
+}
+.sobre { /*estilos genericos da seção 'sobre'*/
+  line-height: 1.6rem;
+  background-color: #272729;
+  color: #EFEFEF;
+  border-radius: 6px;
+  text-align: left;
+  letter-spacing: 0;
+  padding-bottom: 3rem;
+}
+.p-sobre-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.sobre p {
+  width: 80%;
+  padding-top: 3rem;
+  font-weight: bold;
+}
+.carrosel-desktop-custo-beneficio h1,
+.carrosel-mobile-custo-beneficio h1 { /*estilos genericos do titulo do carrosel de custo-beneficio*/
+  color: #BABABA;
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
+  margin: 40px;
+}
+/*//////////////////////////////////ESTILOS MOBILE////////////////////////////////////////////////////////////*/
+header {
+  width: 100%;
+  position: fixed;
+  bottom: 1%;
+  z-index: 9999;
+}
+.btn-reservar-agora {
+  background-color: #F16136;
+  border-style: none;
+  border-radius: 50px;
+  width: 60%;
+  margin: auto;
+  color: white;
+}
+.btn-menu-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-header {
+  display: flex;
+}
+.chamada-menu-wrapper {
+  color: #9A9A9A;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+.chamada-menu-wrapper p{
+  margin: 0;
+}
+.navbar {
+  border-radius: 10px;
+}
+.navbar-toggle {
+  border-style: none;
+}
+#botao-desktop {
+  background-color: #F16136;
+  border-style: none;
+  border-radius: 50px;
+}
+#botao-desktop {
+  display: none;
+}
+#logo-menu {
+  display: none;
+}
+/**********card tela inicial**********/
+.card-reserva {
+  background-color: #FFFFFF;
+  color: white;
+	padding: 20px;
+	width: 80%;
+	border-radius: 5px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.logo-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #E6E6E6;
+}
+.logo-card p {
+  color: #707070;
+  font-size: 10px;
+  font-weight: bold;
+}
+.card-buttons button {
+  width: 100%;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+.btn-card-reserva{
+  background-color: #F16136;
+  border-style: none;
+  font-weight: bold;
+}
+.btn-card-hotel {
+  background-color: transparent;
+  color: #9A9A9A;
+  border-color: #9A9A9A;
+}
+.card-buttons h1 {
+  font-size: 16px;
+  color: #707070;
+  text-align: center;
+}
+.card-avaliação {
+  display: flex;
+}
+.booking-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #009FE2;
+  font-weight: bold;
+}
+.booking-card .nota-booking{
+  border: 1px solid #009FE2;
+  padding: 5px;
+  border-radius: 5px;
+}
+.trip-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #00A680;
+  font-weight: bold;
+}
+.trip-card .nota-trip {
+  border: 1px solid #00A680;
+  padding: 5px;
+  border-radius: 5px;
+}
+/*************custo-beneficio mobile***********/
+.carrosel-desktop-custo-beneficio {
+  display: none;
+}
+/**********section quartos mobile***********/
+.carrosel-desktop-quartos {
+  display: none;
+}
+.botao-ver-quartos-wrapper button {
+  width: 70%;
+  padding: .7rem;
+}
+/*********section promocao mobile***********/
+#img-promocao { /*essa imagem tem largura menor que sua companheira de carrosel, precisa ser centralizada*/
+   margin: auto;
+}
+.promocoes-desktop{
+  display: none;
+}
+.chamada-secao-wrapper h1{
+  color: #F16136;
+  font-weight: bold;
+  padding-left: 10%;
+}
+.chamada-secao-wrapper p{
+  color: #BABABA;
+  font-weight: bold;
+  padding-left: 10%;
+  font-size: 14px;
+  letter-spacing: 0;
+}
+/*********footer mobile*************/
+footer {
+  padding-bottom: 15%;
+  background-color: #373738;
+}
+.footer-desktop {
+  display: none;
+}
+.endereco {
+  height: 100%;
+  background-color: #272729;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+.endereco p {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+.mapa-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 50%;
+  width: 100%;
+  background-color: #272729;
+}
+.mapa {
+  display: block;
+  height: 80%;
+  width: 90%;
+  background-image: url("../img/mapa.png");
+  background-position: center;
+  margin: auto;
+  background-size: auto;
+  border-radius: 10px;
+}
+.footer-button {
+  width: 90%;
+  background-color: #F16136;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50px;
+  border-style: none;
+  margin: auto;
+  color: white;
+}
+.opcoes {
+  background-color: #373738;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.opcoes button {
+  margin: auto;
+  margin-top: 7px;
+}
+.endereco, .opcoes {
+  margin: 0;
+}
+#wpp-button {
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+
+/*/////////////////////////////////////ESTILOS DESKTOP////////////////////////////////////////////////*/
+@media(min-width: 768px) {
+
+  /***********menu desktop***********/
+  header {
+    position: absolute;
+    top: 5%;
+  }
+  #botao-desktop {
+    display: inline;
+    color: white;
+  }
+  #logo-menu {
+    display: block;
+  }
+  header h1, .botao-reservar, .navbar-header{
+		display: none;
+	}
+  #menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .items-menu {
+    display: flex;
+  }
+  header img {
+    display: block;
+  }
+
+  /************8*tela inicial desktop*************/
+  .card-reserva {
+    width: 25%;
+    color: white;
+  	background-color: white;
+  	padding: 20px;
+  	border-radius: 5px;
+  	position: absolute;
+  	top: 60%;
+  	left: 50%;
+  	transform: translate(-120%, -50%);
+  }
+
+  /**********desktop quartos**************/
+  .carrosel-desktop-quartos {
+    display: inline;
+  }
+  .carrosel-mobile-quartos {
+    display: none;
+  }
+  .botao-ver-quartos-wrapper button {
+    width: 30%;
+    padding: .7rem;
+  }
+  #desktop h1,
+  #desktop .chamada-secao-wrapper p {
+    text-align: center;
+    padding: 0;
+  }
+
+  /*************custo-beneficio*************/
+  .carrosel-desktop-custo-beneficio {
+    display: inline;
+  }
+  .carrosel-mobile-custo-beneficio {
+    display: none;
+  }
+
+  /************sobre e promoções*************8*/
+  .promocoes-mobile {
+    display: none;
+  }
+  .promocoes-desktop{
+    display: inline;
+  }
+  .sobre-promocoes-wrapper {
+    width: 100%;
+    background-color: #F0F0F0;
+    display: flex;
+    justify-content: center;
+  }
+  .sobre-promocoes-box {
+    width: 80%;
+    display: flex;
+  }
+  .sobre-promocoes-box .sobre{
+    font-size: 1em;
+    flex: 1;
+    margin: 10px;
+  }
+  .sobre-promocoes-box .promocoes{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  .promocoes .chamada-secao-wrapper h1,
+  .promocoes .chamada-secao-wrapper p {
+    padding: 0;
+  }
+  /*************footer************/
+  footer {
+    padding-bottom: 0;
+  }
+  .endereco {
+    padding-left: 10%;
+    padding-right: 10%;
+    flex-direction: row;
+  }
+  .endereco p {
+    font-size: 13px;
+    margin: auto;
+  }
+  .endereco button {
+    width: 40%;
+  }
+  .opcoes {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .opcoes button {
+    display: none;
+  }
+  .footer-desktop img {
+    background-color: white;
+    border-radius: 10px;
+  }
+  .footer-desktop  {
+    display: flex;
+    color: white;
+    justify-content: space-around;
+  }
+  .footer-desktop img {
+    flex: 1;
+  }
+  .footer-desktop ul {
+    display: flex;
+    justify-content: space-around;
+    flex: 2;
+    font-size: 12px;
+  }
+  .footer-desktop ul div {
+    margin: auto;
+  }
+  .footer-desktop .contato {
+    flex: 1;
+    font-size: 10px;
+  }
+  #tel {
+    font-weight: bold;
+    font-size: 22px;
+  }
+  #email {
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+}

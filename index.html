@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <title></title>
+  </head>
+  <body>
+
+    <header id="inicio">
+      <nav class="container">
+        <nav id="menu" class="navbar navbar-default">
+          <img id="logo-menu" src="./img/logodesktop.png" alt="">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <div class="btn-menu-wrapper">
+                <button type="button" class="btn-reservar-agora btn">Reservar  Agora</button>
+                <div class="chamada-menu-wrapper">
+                  <p>MENU</p>
+                </div>
+              </div>
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="items-menu collapse navbar-collapse" id="menu-collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Inicio<span class="sr-only">(current)</span></a></li>
+                <li><a href="#quartos">quartos</a></li>
+                <li><a href="#sobre">o hotel</a></li>
+                <li><a href="#promocoes">promoções</a></li>
+                <li><a href="#contato">contato</a></li>
+              </ul>
+            </div>
+          </div>
+          <button id="botao-desktop" type="button" class="btn">Reservar</button>
+        </nav>
+      </nav>
+    </header>
+
+    <section class="inicio">
+      <div class="card-reserva">
+        <div class="logo-card">
+          <img src="./img/image7.png" alt="Logo do Hotel Itaparica">
+          <p>CARUARU - PE</p>
+        </div>
+        <div class="card-buttons">
+          <h1>Tarifas acessíveis, bom atendimento e uma ótima localização</h1>
+          <button type="button" class="btn-card-reserva btn">Reservar Agora</button>
+          <button type="button" class="btn-card-hotel btn">Conheça o Hotel</button>
+        </div>
+        <div class="card-avaliação">
+          <div class="booking-card">
+            <p class="nota-booking">8,5</p>
+            <p>Booking.com</p>
+          </div>
+          <div class="trip-card">
+            <p class="nota-trip">4 &#9733; </p>
+            <p>Trip Advisor</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="carrosel-mobile-custo-beneficio">
+        <h1>O MELHOR CUSTO-BENEFÍCIO DE CARUARU</h1>
+        <div id="carrosel-mobile-custo-beneficio" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img class="img-responsive" src="./img/cafedamanha.png"
+                srcset="./img/cafedamanha@2x.png 768w"
+                  sizes="(min-width: 768px)  768px"
+                  alt="Café da manhã delicioso">
+              </div>
+              <div class="item">
+                <img class="img-responsive"src="./img/churrasqueira.png"
+                srcset="./img/churrasqueira@2x.png 768w"
+                  sizes="(min-width: 768px)  768px"
+                  alt="Churrasqueira">
+              </div>
+              <div class="item">
+                <img class="img-responsive"src="./img/piscina.png"
+                srcset="./img/piscina@2x.png 768w"
+                  sizes="(min-width: 768px)  768px"
+                  alt="Piscina">
+              </div>
+          </div>
+          <a class="left carousel-control" href="#carrosel-mobile-custo-beneficio" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carrosel-mobile-custo-beneficio" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+    </section>
+
+    <section class="carrosel-desktop-custo-beneficio">
+      <h1>O MELHOR CUSTO-BENEFÍCIO DE CARUARU</h1>
+      <div id="carrosel-desktop-custo-beneficio" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <div class="row">
+              <div class="col-sm-4">
+                <img class="img-responsive"src="./img/cafedamanha.png" alt="Café da manhã">
+              </div>
+              <div class="item col-sm-4">
+                <img class="img-responsive"src="./img/churrasqueira.png" alt="Churrasqueira">
+              </div>
+              <div class="item col-sm-4">
+                <img class="img-responsive"src="./img/piscina.png" alt="Piscina">
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="row">
+              <div class="col-sm-4">
+                <img class="img-responsive"src="./img/cafedamanha.png" alt="Café da manhã">
+              </div>
+              <div class="item col-sm-4">
+                <img class="img-responsive"src="./img/churrasqueira.png" alt="Churraqueira">
+              </div>
+              <div class="item col-sm-4">
+                <img class="img-responsive"src="./img/piscina.png" alt="Piscina">
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="left carousel-control" href="#carrosel-desktop-custo-beneficio" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carrosel-desktop-custo-beneficio" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+
+    <div id="quartos"></div>
+    <section class="carrosel-mobile-quartos carrosel-quartos">
+        <div class="chamada-secao-wrapper">
+          <h1>Quartos</h1>
+          <p>Todas as acomodações possuem Wi-Fi</p>
+        </div>
+        <div id="carrosel-mobile-quartos" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <div class="div-duplo">
+                  <img class="img-responsive"src="./img/duplo.png" alt="Quarto duplo">
+                  <div class="carousel-caption">
+                    <h1>Duplo</h1>
+                    <p>A partir de R$189</p>
+                    <button class="botao-quartos arredondar-botao">Saiba mais</button>
+                  </div>
+                </div>
+              </div>
+              <div class="item div-triplo">
+                <img class="img-responsive"src="./img/triplo.png" alt="Quarto triplo">
+                <div class="carousel-caption">
+                  <h1>Triplo</h1>
+                  <p>A partir de R$249</p>
+                  <button class="botao-quartos arredondar-botao">Saiba mais</button>
+                </div>
+              </div>
+          </div>
+          <a class="left carousel-control" href="#carrosel-mobile-quartos" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carrosel-mobile-quartos" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <div class="botao-ver-quartos-wrapper">
+          <button class="arredondar-botao" type="button" name="button">Ver todos os quartos</button>
+        </div>
+    </section>
+
+    <section id="desktop" class="carrosel-desktop-quartos">
+      <div class="chamada-secao-wrapper">
+        <h1>Quartos</h1>
+        <p>Todas as acomodações possuem Wi-Fi</p>
+      </div>
+      <div id="carrosel-desktop-quartos" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <div class="row">
+              <div class="div-duplo col-sm-6">
+                <img class="img-responsive"src="./img/duplo.png" alt="Quarto duplo">
+                <div class="carousel-caption">
+                  <h1>Duplo</h1>
+                  <p>A partir de R$189</p>
+                  <button class="botao-quartos arredondar-botao">Saiba mais</button>
+                </div>
+              </div>
+              <div class="item div-triplo col-sm-6">
+                <img class="img-responsive"src="./img/triplo.png" alt="Quarto triplo">
+                <div class="carousel-caption">
+                  <h1>Triplo</h1>
+                  <p>A partir de R$249</p>
+                  <button class="botao-quartos arredondar-botao">Saiba mais</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="row">
+              <div class="div-duplo col-sm-6">
+                <img class="img-responsive"src="./img/duplo.png" alt="Quarto duplo">
+                <div class="carousel-caption">
+                  <h1>Duplo</h1>
+                  <p>A partir de R$189</p>
+                  <button class="botao-quartos arredondar-botao">Saiba mais</button>
+                </div>
+              </div>
+              <div class="item div-triplo col-sm-6">
+                <img class="img-responsive"src="./img/triplo.png" alt="Quarto triplo">
+                <div class="carousel-caption">
+                  <h1>Triplo</h1>
+                  <p>A partir de R$249</p>
+                  <button class="botao-quartos arredondar-botao">Saiba mais</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+        <a class="left carousel-control" href="#carrosel-desktop-quartos" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carrosel-desktop-quartos" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <div class="botao-ver-quartos-wrapper">
+        <button class="arredondar-botao" type="button" name="button">Ver todos os quartos</button>
+      </div>
+     </section>
+
+    <div class="sobre-promocoes-wrapper">
+      <div class="sobre-promocoes-box">
+        <section id="sobre" class="sobre">
+          <img class="img-responsive" src="./img/fachada@2x.png" alt="Fachada do hotel">
+          <div class="p-sobre-wrapper">
+            <p>No Hotel Itaparica você vai encontrar um estrutura confortável com tarifas acessíveis, bom atendimento e uma ótima localização. Dispomos de quartos para até 4 pessoas, com ar-condicionado, TV, chuveiro elétrico, frigobar e internet sem fio.</p>
+          </div>
+        </section>
+        <section class="promocoes">
+          <div id="promocoes"></div>
+          <div class="chamada-secao-wrapper">
+            <h1>Promoções</h1>
+            <p>Não cumulativos com os demais descontos e cortesias do Hotel Itaparica</p>
+          </div>
+          <div class="promocoes-mobile">
+            <div id="promocoes-mobile" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <div class="div-duplo">
+                    <img id="img-promocao" class="img-responsive"src="./img/image11recortada.png" alt="Cartaz do filme a paixão de cristo">
+                  </div>
+                </div>
+                <div class="item div-triplo">
+                  <img class="img-responsive"src="./img/image12.png" alt="Cartaz do pacote especial de carnaval">
+                </div>
+              </div>
+              <a class="left carousel-control" href="#promocoes-mobile" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#promocoes-mobile" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <div class="promocoes-desktop">
+            <div id="promocoes-desktop" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <div class="row">
+                    <div class="div-duplo col-sm-6">
+                      <img class="img-responsive"src="./img/image11recortada.png" alt="Cartaz filme a paixão de cristo">
+                    </div>
+                    <div class="item div-triplo col-sm-6">
+                      <img class="img-responsive"src="./img/image12.png" alt="Cartaz do pacote especial de carnaval">
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="row">
+                    <div class="div-duplo col-sm-6">
+                      <img class="img-responsive"src="./img/image11recortada.png" alt="Cartaz filme a paixão de cristo">
+                    </div>
+                    <div class="item div-triplo col-sm-6">
+                      <img class="img-responsive"src="./img/image12.png" alt="Cartaz do pacote especial de carnaval">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="left carousel-control" href="#promocoes-desktop" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#promocoes-desktop" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="mapa-wrapper">
+      <div class="mapa"></div>
+    </div>
+
+    <footer>
+      <address class="endereco">
+        <p>Av. Cícero José Dutra, 305</p>
+        <p>Petrópolis - Caruaru - PE</p>
+        <button type="button" class="footer-button btn">Traçar rota até o Hotel</button>
+      </address>
+      <div class="opcoes">
+        <button type="button" class="footer-button btn">Chamar Uber</button>
+        <button type="button" class="footer-button btn">Reservar Agora</button>
+        <button id="wpp-button" type="button" class="footer-button btn">WhatsApp</button>
+        <div id="contato"></div>
+        <div class="footer-desktop">
+          <img src="./img/logofooter@2x.png" alt="logo hotel">
+          <ul>
+            <div>
+              <li><a href="#inicio">INICIO</a></li>
+              <li>O HOTEL</li>
+              <li>PROMOÇÕES</li>
+            </div>
+            <div>
+              <li>SUÍTES</li>
+              <li>LOCALIZAÇÃO</li>
+              <li>CONTATO</li>
+            </div>
+          </ul>
+          <div class="contato">
+            <p>tel</p>
+            <p id="tel">(081) 3722-5332</p>
+            <p>email</p>
+            <p id="email">contato@hotelitaparica.com.br</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+</html>
